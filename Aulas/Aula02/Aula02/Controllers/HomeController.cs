@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Aula02.Data;
 using Aula02.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,15 +8,17 @@ namespace Aula02.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly SchoolContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, SchoolContext context) 
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            return View(_context.Students.ToList()); // Ele passa 
         }
 
         public IActionResult Privacy()

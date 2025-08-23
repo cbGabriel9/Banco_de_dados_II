@@ -229,3 +229,4 @@ C:\Users\431191\Documents\Banco_de_dados_II\Aulas\Aula03\GreenHouse\GreenHouse\o
 C:\Users\431191\Documents\Banco_de_dados_II\Aulas\Aula03\GreenHouse\GreenHouse\obj\Debug\net9.0\GreenHouse.pdb
 C:\Users\431191\Documents\Banco_de_dados_II\Aulas\Aula03\GreenHouse\GreenHouse\obj\Debug\net9.0\GreenHouse.genruntimeconfig.cache
 C:\Users\431191\Documents\Banco_de_dados_II\Aulas\Aula03\GreenHouse\GreenHouse\obj\Debug\net9.0\ref\GreenHouse.dll
+C:\Users\431191\Documents\Banco_de_dados_II\Aulas\Aula03\GreenHouse\GreenHouse\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

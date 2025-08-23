@@ -8,8 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<SchoolContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<SchoolContext>(options => // Nessa linha, ele adicionar o DbContext ao container de serviços da aplicação (entrando naquela parte de "funções nativas")
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")) 
+);
 
 var app = builder.Build();
 

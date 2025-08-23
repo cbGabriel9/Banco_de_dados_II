@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula03\\GreenHouse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|c:\\users\\431191\\documents\\banco_de_dados_ii\\aulas\\aula03\\greenhouse\\greenhouse\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|solutionrelative:greenhouse\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|c:\\users\\431191\\documents\\banco_de_dados_ii\\aulas\\aula03\\greenhouse\\greenhouse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|solutionrelative:greenhouse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|c:\\users\\431191\\documents\\banco_de_dados_ii\\aulas\\aula03\\greenhouse\\greenhouse\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|solutionrelative:greenhouse\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|c:\\users\\431191\\documents\\banco_de_dados_ii\\aulas\\aula03\\greenhouse\\greenhouse\\data\\greenhousecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|solutionrelative:greenhouse\\data\\greenhousecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|c:\\users\\431191\\documents\\banco_de_dados_ii\\aulas\\aula03\\greenhouse\\greenhouse\\models\\plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|solutionrelative:greenhouse\\models\\plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|c:\\users\\431191\\documents\\banco_de_dados_ii\\aulas\\aula03\\greenhouse\\greenhouse\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|solutionrelative:greenhouse\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|c:\\users\\431191\\documents\\banco_de_dados_ii\\aulas\\aula03\\greenhouse\\greenhouse\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|solutionrelative:greenhouse\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|c:\\users\\431191\\documents\\banco_de_dados_ii\\aulas\\aula03\\greenhouse\\greenhouse\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|solutionrelative:greenhouse\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|c:\\users\\431191\\documents\\banco_de_dados_ii\\aulas\\aula03\\greenhouse\\greenhouse\\models\\plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC9764F-F9B3-450B-B531-DCEC40B2C074}|GreenHouse\\GreenHouse.csproj|solutionrelative:greenhouse\\models\\plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,24 +38,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula03\\GreenHouse\\GreenHouse\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GreenHouse\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula03\\GreenHouse\\GreenHouse\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GreenHouse\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T00:15:00.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula03\\GreenHouse\\GreenHouse\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "GreenHouse\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula03\\GreenHouse\\GreenHouse\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "GreenHouse\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T00:12:58.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula03\\GreenHouse\\GreenHouse\\appsettings.json",
               "RelativeDocumentMoniker": "GreenHouse\\appsettings.json",
               "ToolTip": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula03\\GreenHouse\\GreenHouse\\appsettings.json",
               "RelativeToolTip": "GreenHouse\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-08-16T00:43:19.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Plant.cs",
               "DocumentMoniker": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula03\\GreenHouse\\GreenHouse\\Models\\Plant.cs",
               "RelativeDocumentMoniker": "GreenHouse\\Models\\Plant.cs",
@@ -55,8 +89,7 @@
               "RelativeToolTip": "GreenHouse\\Models\\Plant.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T00:29:56.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-16T00:29:56.914Z"
             },
             {
               "$type": "Document",
@@ -86,13 +119,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula03\\GreenHouse\\GreenHouse\\Program.cs",
               "RelativeDocumentMoniker": "GreenHouse\\Program.cs",
               "ToolTip": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula03\\GreenHouse\\GreenHouse\\Program.cs",
               "RelativeToolTip": "GreenHouse\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T00:26:06.362Z",
               "EditorCaption": ""

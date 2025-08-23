@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using GreenHouse.Models;
+using GreenHouse.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GreenHouse.Controllers
@@ -7,15 +8,17 @@ namespace GreenHouse.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly GreenHouseContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, GreenHouseContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            return View(_context.Plants.ToList());
         }
 
         public IActionResult Privacy()

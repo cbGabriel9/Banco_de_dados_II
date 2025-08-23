@@ -460,3 +460,4 @@ C:\Users\431191\Documents\Banco_de_dados_II\Aulas\Aula02\Aula02\obj\Debug\net9.0
 C:\Users\431191\Documents\Banco_de_dados_II\Aulas\Aula02\Aula02\obj\Debug\net9.0\Aula02.pdb
 C:\Users\431191\Documents\Banco_de_dados_II\Aulas\Aula02\Aula02\obj\Debug\net9.0\Aula02.genruntimeconfig.cache
 C:\Users\431191\Documents\Banco_de_dados_II\Aulas\Aula02\Aula02\obj\Debug\net9.0\ref\Aula02.dll
+C:\Users\431191\Documents\Banco_de_dados_II\Aulas\Aula02\Aula02\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
