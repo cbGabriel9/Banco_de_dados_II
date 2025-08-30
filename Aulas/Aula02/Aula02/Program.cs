@@ -1,4 +1,5 @@
 using Aula02.Data;
+using Aula02.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -11,6 +12,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<SchoolContext>(options => // Nessa linha, ele adicionar o DbContext ao container de serviços da aplicação (entrando naquela parte de "funções nativas")
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")) 
 );
+
+builder.Services.AddScoped<IStudentRepository, StudentRepository>(); // Adiciona o repositório ao container de serviços da aplicação
 
 var app = builder.Build();
 

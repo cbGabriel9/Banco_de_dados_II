@@ -7,6 +7,8 @@
 <div class="text-center">
     <h1 class="display-4">@Model.Count estudantes.</h1>
 
+    <a asp-action="Create" asp-controller="Home">Adicionar</a>
+
     <table class="table table-responsive table-hover table-striped">
         <thead>
             <tr>
@@ -14,6 +16,8 @@
                 <th>Nome</th>
                 <th>Sobrenome</th>
                 <th>Data da matrícula</th>
+                <th></th>
+                <th></th>
             </tr>
         </thead>
 
@@ -25,6 +29,17 @@
                     <td>@s.FirstMidName</td>
                     <td>@s.LastName</td>
                     <td>@s.EnrollmentDate.ToShortDateString()</td>
+                    <td>
+                        <form asp-controller="Home" asp-action="Delete" method="post">
+                            <input type="hidden" name="id" value="@s.ID" />
+                            <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a asp-controller="Home" asp-action="Update" asp-route-id="@s.ID" method="get">
+                            Editar
+                        </a>
+                    </td>
                 </tr>
             }
         </tbody>
