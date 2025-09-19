@@ -38,8 +38,7 @@
               "RelativeToolTip": "Aula02\\Views\\Home\\Update.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-30T00:49:56.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T00:49:56.284Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "Aula02\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Aula02\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-30T00:19:29.803Z",
               "EditorCaption": ""
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Aula02\\Views\\Home\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-30T00:11:01.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T00:11:01.694Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "Aula02\\Controllers\\HomeController.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAUwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T22:58:40.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T22:58:40.528Z"
             }
           ]
         }
