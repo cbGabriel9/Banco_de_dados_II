@@ -1,21 +1,21 @@
-using System.Diagnostics;
-using System.Threading.Tasks;
-using Aula02.Data;
-using Aula02.Models;
+﻿using Aula02.Models;
 using Aula02.Repository;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace Aula02.Controllers
 {
-    public class HomeController : Controller
+    public class CourseController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        private readonly IStudentRepository _studentRepository;
+        private readonly ICourseRepository _courseRepository;
 
-        public HomeController(ILogger<HomeController> logger, IStudentRepository studentRepository) 
+        public CourseController(ICourseRepository courseRepository)
         {
-            _logger = logger;
-            _studentRepository = studentRepository;
+            _courseRepository = courseRepository;
+        }
+        public async Task<IActionResult> Index()
+        {
+            return View(await _courseRepository.GetAll()); // Ele passa a lista de estudantes para a View
         }
 
         [HttpGet]
@@ -25,14 +25,14 @@ namespace Aula02.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Student student)
+        public async Task<IActionResult> Create(Course course)
         {
             if (ModelState.IsValid)
             {
-                await _studentRepository.Create(student);
+                await _courseRepository.Create(course);
                 return RedirectToAction("Index");
             }
-                return View(student);
+            return View(course);
         }
 
         [HttpGet]
@@ -42,41 +42,36 @@ namespace Aula02.Controllers
             {
                 return BadRequest();
             }
-            var student = await _studentRepository.GetById(id.Value);
+            var course = await _courseRepository.GetById(id.Value);
 
-            if(student == null)
+            if (course == null)
             {
                 return NotFound();
             }
 
-            return View(student);
+            return View(course);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(int? id, Student student)
+        public async Task<IActionResult> Update(int? id, Course course)
         {
-            if(!id.HasValue)
+            if (!id.HasValue)
             {
                 return BadRequest();
             }
 
-            if(id.Value != student.ID)
+            if (id.Value != course.ID)
             {
                 return BadRequest();
             }
 
             if (ModelState.IsValid)
             {
-                await _studentRepository.Update(student);
+                await _courseRepository.Update(course);
                 return RedirectToAction("Index");
             }
 
-            return View(student);
-        }
-
-        public async Task<IActionResult> Index()
-        {
-            return View( await _studentRepository.GetAll()); // Ele passa a lista de estudantes para a View
+            return View(course);
         }
 
         public IActionResult Privacy()
@@ -91,18 +86,18 @@ namespace Aula02.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete (int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var student = await _studentRepository.GetById(id);
-            if (student == null)
+            var course = await _courseRepository.GetById(id);
+            if (course == null)
             {
                 return NotFound();
             }
 
-            await _studentRepository.Delete(student);
+            await _courseRepository.Delete(course);
             return RedirectToAction("Index");
         }
-      
+
 
     }
 }
