@@ -1,6 +1,9 @@
 ﻿using Aula02.Data;
 using Aula02.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Aula02.Repository
 {
@@ -12,6 +15,8 @@ namespace Aula02.Repository
         {
             _context = schoolContext;
         }
+
+        // --- MÉTODOS DE MANIPULAÇÃO DE DADOS (CUD) ---
 
         public async Task Create(StudentCourses studentCourses)
         {
@@ -31,46 +36,58 @@ namespace Aula02.Repository
             await _context.SaveChangesAsync();
         }
 
+        // --- MÉTODOS DE CONSULTA (READ) ---
+
         public async Task<StudentCourses?> Get(int studentId, int courseId)
         {
-            var data = await _context.StudentCourses.Include(x => x.Course).Include(x => x.Student).Where(w => w.StudentID == studentId && w.CourseID == courseId);
-
-            return data;
+            return await _context.StudentCourses
+                .Include(x => x.Course)
+                .Include(x => x.Student)
+                .FirstOrDefaultAsync(w => w.StudentID == studentId && w.CourseID == courseId);
         }
-        public async Task<List<StudentCourses?>> GetAll()
+
+        public async Task<List<StudentCourses>> GetAll()
         {
-            var data = await _context.StudentCourses.Include(x => x.Course).Include(x => x.Student);
-
-            return data;
+            return await _context.StudentCourses
+                .Include(x => x.Course)
+                .Include(x => x.Student)
+                .ToListAsync();
         }
 
-        public async Task<List<StudentCourses?>> GetByCourseId(int courseId)
+        public async Task<List<StudentCourses>> GetByCourseId(int courseId)
         {
-            var data = await _context.StudentCourses.Include(x => x.Course).Include(x => x.Student).Where(w => w.CourseID == courseId);
-
-            return data;
+            return await _context.StudentCourses
+                .Include(x => x.Course)
+                .Include(x => x.Student)
+                .Where(w => w.CourseID == courseId)
+                .ToListAsync();
         }
 
-        public async Task<List<StudentCourses?>> GetByStudentId(int studentId)
+        public async Task<List<StudentCourses>> GetByStudentId(int studentId)
         {
-            var data = await _context.StudentCourses.Include(x => x.Course).Include(x => x.Student).Where(w => w.StudentID == studentId);
-
-            return data;
+            return await _context.StudentCourses
+                .Include(x => x.Course)
+                .Include(x => x.Student)
+                .Where(w => w.StudentID == studentId)
+                .ToListAsync();
         }
 
-        public async Task<List<StudentCourses?>> GetByCourseName(string courseName)
+        public async Task<List<StudentCourses>> GetByCourseName(string courseName)
         {
-            var data = await _context.StudentCourses.Include(x => x.Course).Include(x => x.Student).Where(w => w.Course!.Name!.ToLower().Contains(Name.ToLower()));
-
-            return data;
+            return await _context.StudentCourses
+                .Include(x => x.Course)
+                .Include(x => x.Student)
+                .Where(w => w.Course != null && w.Course.Name != null && w.Course.Name.ToLower().Contains(courseName.ToLower()))
+                .ToListAsync();
         }
 
-        public async Task<List<StudentCourses?>> GetByStudentName(string name)
+        public async Task<List<StudentCourses>> GetByStudentName(string name)
         {
-            var data = await _context.StudentCourses.Include(x => x.Course).Include(x => x.Student).Where(w => w.StudentID == studentId);
-
-            return data;
+            return await _context.StudentCourses
+                .Include(x => x.Course)
+                .Include(x => x.Student)
+                .Where(w => w.Student != null && w.Student.FirstMidName != null && w.Student.FirstMidName.ToLower().Contains(name.ToLower()))
+                .ToListAsync();
         }
-
     }
 }

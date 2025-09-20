@@ -19,6 +19,7 @@ namespace Aula02.Data
         {
             modelBuilder.Entity<Student>().ToTable("Student");
             modelBuilder.Entity<Course>().ToTable("Course");
+            modelBuilder.Entity<StudentCourses>().ToTable("StudentCourses");
         }
     }
 }

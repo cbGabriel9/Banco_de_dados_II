@@ -1,0 +1,49 @@
+﻿@model ICollection<Aula02.Models.StudentCourses>
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Count inscrições.</h1>
+
+    <a asp-action="Create" asp-controller="StudentCourses">Adicionar</a>
+
+    <table class="table table-responsive table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Id Estudante</th>
+                <th>Estudante</th>
+                <th>Id Curso</th>
+                <th>Curso</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var s in Model)
+            {
+                <tr>
+                    <td>@s.StudentID</td>
+                    <td>@s.Student?.FirstMidName</td>
+                    <td>@s.CourseID</td>
+                    <td>@s.Course?.Name</td>
+                    <td>
+                        <form asp-controller="StudentCourses" asp-action="Delete" method="post">
+                            <input type="hidden" name="studentId" value="@s.StudentID" />
+                            <input type="hidden" name="courseId" value="@s.CourseID" />
+                            <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a asp-controller="StudentCourses" asp-action="Update" asp-route-id="@s.StudentID, @s.CourseID" method="get">
+                            Editar
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -8,17 +8,13 @@ namespace Aula02.Models
     public class StudentCourses
     {
         public int StudentID { get; set; }
-
         // Property Navigations 
         [ForeignKey(nameof(StudentID))]
         public Student? Student { get; set; }
-
         public int CourseID { get; set; }
-
         // Property Navigations 
         [ForeignKey(nameof(CourseID))]
         public Course? Course { get; set; }
-
         public DateTime SignDate { get; set; }
         public DateTime? CancelDate { get; set; }
     }

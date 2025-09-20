@@ -68,11 +68,17 @@ namespace Aula02.Migrations
                     b.Property<int>("CourseID")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("CancelDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("SignDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("StudentID", "CourseID");
 
                     b.HasIndex("CourseID");
 
-                    b.ToTable("StudentCourses");
+                    b.ToTable("StudentCourses", (string)null);
                 });
 
             modelBuilder.Entity("Aula02.Models.StudentCourses", b =>

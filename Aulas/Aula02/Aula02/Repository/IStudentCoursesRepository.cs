@@ -4,14 +4,14 @@ namespace Aula02.Repository
 {
     public interface IStudentCoursesRepository
     {
-        public Task Create(StudentCoursesRepository studentCourse);
-        public Task Update(StudentCoursesRepository studentCourse);
-        public Task Delete(StudentCoursesRepository studentCourse);
-        public Task<List<StudentCoursesRepository?>> GetByStudentId(int studentId);
-        public Task<List<StudentCoursesRepository?>> GetByCourseId(int courseId);
-        public Task<StudentCoursesRepository?> Get(int studentId, int courseId);
-        public Task<List<StudentCoursesRepository>> GetByCourseName(string name);
-        public Task<List<StudentCoursesRepository>> GetByStudentName(string name);
-        public Task<List<StudentCoursesRepository>> GetAll();
+        public Task Create(StudentCourses studentCourse);
+        public Task Update(StudentCourses studentCourse);
+        public Task Delete(StudentCourses studentCourse);
+        public Task<List<StudentCourses?>> GetByStudentId(int studentId);
+        public Task<List<StudentCourses?>> GetByCourseId(int courseId);
+        public Task<StudentCourses?> Get(int studentId, int courseId);
+        public Task<List<StudentCourses>> GetByCourseName(string name);
+        public Task<List<StudentCourses>> GetByStudentName(string name);
+        public Task<List<StudentCourses>> GetAll();
     }
 }
