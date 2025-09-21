@@ -30,10 +30,21 @@ namespace Aula02.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task Update(StudentCourses studentCourses)
+        public async Task Update(int? originalStudentId, int? originalCourseId, StudentCourses studentCourseNewData)
         {
-            _context.StudentCourses.Update(studentCourses);
-            await _context.SaveChangesAsync();
+            var studentCourseOld = await _context.StudentCourses
+                .FindAsync(originalStudentId, originalCourseId);
+
+            if (studentCourseOld != null)
+            {
+                // Remove o registro antigo
+                _context.StudentCourses.Remove(studentCourseOld);
+                await _context.SaveChangesAsync();
+
+                // Adiciona o novo registro com os dados atualizados
+                await _context.StudentCourses.AddAsync(studentCourseNewData);
+                await _context.SaveChangesAsync();
+            }
         }
 
         // --- MÉTODOS DE CONSULTA (READ) ---

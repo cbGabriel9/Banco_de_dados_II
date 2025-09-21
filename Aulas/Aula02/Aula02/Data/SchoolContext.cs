@@ -21,5 +21,10 @@ namespace Aula02.Data
             modelBuilder.Entity<Course>().ToTable("Course");
             modelBuilder.Entity<StudentCourses>().ToTable("StudentCourses");
         }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.LogTo(Console.WriteLine, LogLevel.Information);
+        }
     }
 }
