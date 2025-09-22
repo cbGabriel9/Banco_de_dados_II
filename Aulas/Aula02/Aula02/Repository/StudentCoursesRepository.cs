@@ -24,12 +24,6 @@ namespace Aula02.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(StudentCourses studentCourses)
-        {
-            _context.StudentCourses.Remove(studentCourses);
-            await _context.SaveChangesAsync();
-        }
-
         public async Task Update(int? originalStudentId, int? originalCourseId, StudentCourses studentCourseNewData)
         {
             var studentCourseOld = await _context.StudentCourses
@@ -45,6 +39,11 @@ namespace Aula02.Repository
                 await _context.StudentCourses.AddAsync(studentCourseNewData);
                 await _context.SaveChangesAsync();
             }
+        }
+        public async Task Delete(StudentCourses studentCourses)
+        {
+            _context.StudentCourses.Remove(studentCourses);
+            await _context.SaveChangesAsync();
         }
 
         // --- MÉTODOS DE CONSULTA (READ) ---
