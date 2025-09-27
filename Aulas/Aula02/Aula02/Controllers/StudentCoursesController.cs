@@ -1,5 +1,6 @@
 ﻿using Aula02.Models;
 using Aula02.Repository;
+using Aula02.ViewModels.StudentCourses;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -19,35 +20,48 @@ namespace Aula02.Controllers
             _studentCoursesRepository = studentCoursesRepository;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index() // Ele retorna a view
         {
-            return View(await _studentCoursesRepository.GetAll());
+            var data = await _studentRepository.GetAll();
+
+            return View(data);
         }
 
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var allStudents = await _studentRepository.GetAll();
-            var allCourses = await _courseRepository.GetAll();
+            var viewModel = new StudentCoursesViewModel();
 
-            var studentsSelectList = new SelectList(allStudents, "ID", "FirstMidName");
-            var coursesSelectList = new SelectList(allCourses, "ID", "Name");
+            viewModel.Students = await _studentRepository.GetAllNotEnrolled();
+            viewModel.SetCourses(await _courseRepository.GetAll()); 
 
-            ViewBag.Students = studentsSelectList;
-            ViewBag.Courses = coursesSelectList;
-
-            return View();
+            return View(viewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(StudentCourses studentCourses)
+        public async Task<IActionResult> Create(StudentCoursesViewModel viewModel)
         {
+            
             if (ModelState.IsValid)
             {
-                await _studentCoursesRepository.Create(studentCourses);
+                foreach(var c in viewModel.Courses)
+                {
+                    if(c.IsSelected)
+                    {
+                        await _studentCoursesRepository.Create(new Models.StudentCourses
+                        {
+                            StudentID = viewModel.StudentId,
+                            CourseID = c.Id!,
+                            SignDate = DateTime.Now
+                        });
+                    }
+
+                }
+                
                 return RedirectToAction("Index");
             }
-            return View(studentCourses);
+
+            return View(viewModel);
         }
 
         [HttpGet]

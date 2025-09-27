@@ -4713,23 +4713,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PICHAU\\.nuget\\packages\\": {},
+    "C:\\Users\\431191\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Aula02.csproj",
+      "projectUniqueName": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Aula02.csproj",
       "projectName": "Aula02",
-      "projectPath": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Aula02.csproj",
-      "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\obj\\",
+      "projectPath": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Aula02.csproj",
+      "packagesPath": "C:\\Users\\431191\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\431191\\Documents\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\431191\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4738,6 +4738,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4806,7 +4807,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

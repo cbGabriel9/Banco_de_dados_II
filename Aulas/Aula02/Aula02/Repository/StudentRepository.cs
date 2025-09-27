@@ -33,7 +33,25 @@ namespace Aula02.Repository
 
         public async Task<List<Student>> GetAll()
         {
-            var data = await _context.Students.ToListAsync();
+            var data = await _context.Students
+                .Include(sc => sc.StudentCourses!)
+                    .ThenInclude(c => c.Course)
+                .ToListAsync();
+            return data;
+        }
+        public async Task<List<Student>> GetAllNotEnrolled()
+        {
+            var enrolledStudentIds = await _context.StudentCourses
+                .Select(sc => sc.StudentID)
+                .Distinct()
+                .ToListAsync();
+
+            var data = await _context.Students
+                .Include(sc => sc.StudentCourses!)
+                    .ThenInclude(c => c.Course)
+                    .Where(w => !enrolledStudentIds.Contains(w.ID))
+                    .OrderBy(s => s.FirstMidName)
+                .ToListAsync();
             return data;
         }
 
@@ -50,5 +68,6 @@ namespace Aula02.Repository
 
             return students;
         }
+
     }
 }

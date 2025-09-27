@@ -1,22 +1,21 @@
-﻿@model ICollection<Aula02.Models.StudentCourses>
-
+﻿@model ICollection<Aula02.Models.Student>
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Estudantes/Matrículas";
 }
 
 <div class="text-center">
-    <h1 class="display-4">@Model.Count inscrições.</h1>
+    <h1 class="display-4">@Model.Count estudantes/matrículas.</h1>
 
     <a asp-action="Create" asp-controller="StudentCourses">Adicionar</a>
 
     <table class="table table-responsive table-hover table-striped">
         <thead>
             <tr>
-                <th>Id Estudante</th>
-                <th>Estudante</th>
-                <th>Id Curso</th>
-                <th>Curso</th>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Data da matrícula</th>
                 <th></th>
                 <th></th>
             </tr>
@@ -26,24 +25,38 @@
             @foreach (var s in Model)
             {
                 <tr>
-                    <td>@s.StudentID</td>
-                    <td>@s.Student?.FirstMidName</td>
-                    <td>@s.CourseID</td>
-                    <td>@s.Course?.Name</td>
+                    <td>@s.ID</td>
+                    <td>@s.FirstMidName</td>
+                    <td>@s.LastName</td>
+                    <td>@s.EnrollmentDate.ToShortDateString()</td>
                     <td>
-                        <form asp-controller="StudentCourses" asp-action="Delete" method="post">
-                            <input type="hidden" name="studentId" value="@s.StudentID" />
-                            <input type="hidden" name="courseId" value="@s.CourseID" />
+                        <form asp-controller="Home" asp-action="Delete" method="post">
+                            <input type="hidden" name="id" value="@s.ID" />
                             <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
                         </form>
                     </td>
                     <td>
-                        <a asp-controller="StudentCourses" asp-action="Update" asp-route-studentId="@s.StudentID" asp-route-courseId="@s.CourseID" method="get">
+                        <a asp-controller="Home" asp-action="Update" asp-route-id="@s.ID" method="get">
                             Editar
                         </a>
                     </td>
                 </tr>
+
+                @if(s.StudentCourses!.Count > 0)
+                {
+
+                    <tr>
+                        <td colspan="5">
+                            <ul>
+                                @foreach (var sc in s.StudentCourses!)
+                                    {
+                                        <li> - @sc.Course?.Name</li>
+                                    }
+                            </ul>
+                        </td>
+                    </tr>
+                }
             }
         </tbody>
-    </table>
+</table>
 </div>
