@@ -30,7 +30,7 @@ namespace Aula02.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var viewModel = new StudentCoursesViewModel();
+            var viewModel = new CreateStudentCoursesViewModel();
 
             viewModel.Students = await _studentRepository.GetAllNotEnrolled();
             viewModel.SetCourses(await _courseRepository.GetAll()); 
@@ -39,7 +39,7 @@ namespace Aula02.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(StudentCoursesViewModel viewModel)
+        public async Task<IActionResult> Create(CreateStudentCoursesViewModel viewModel)
         {
             
             if (ModelState.IsValid)
@@ -55,7 +55,6 @@ namespace Aula02.Controllers
                             SignDate = DateTime.Now
                         });
                     }
-
                 }
                 
                 return RedirectToAction("Index");
@@ -65,27 +64,37 @@ namespace Aula02.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Update(int? studentId, int? courseId)
+        public async Task<IActionResult> Update(int? studentId)
         {
-            if (!studentId.HasValue || !courseId.HasValue)
+            if (!studentId.HasValue)
             {
                 return BadRequest();
             }
-            var studentCourseId = await _studentCoursesRepository.Get(studentId!.Value, courseId!.Value);
+            var student = await _studentRepository.GetById(studentId!.Value);
 
-
-            if (studentCourseId == null)
+            if (student == null)
             {
                 return NotFound();
             }
 
-            var allCourses = await _courseRepository.GetAll();
+            var viewModel = new UpdateStudentCoursesViewModel()
+            {
+                SelectedStudent = student
+            };
 
-            var courseSelectList = new SelectList(allCourses, "ID", "Name", courseId.Value);
+            var studentCourses = await _studentCoursesRepository.GetByStudentId(studentId!.Value);
 
-            ViewBag.Courses = courseSelectList;
+            viewModel.SetCourses(await _courseRepository.GetAll());
 
-            return View(studentCourseId);
+            foreach(var c in viewModel.Courses)
+            {
+                if(studentCourses.Any(sc => sc!.CourseID == c.Id))
+                {
+                    c.IsSelected = true;
+                }
+            }
+
+            return View(viewModel);
         }
 
         [HttpPost]

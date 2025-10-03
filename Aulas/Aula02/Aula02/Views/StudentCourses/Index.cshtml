@@ -17,7 +17,6 @@
                 <th>Sobrenome</th>
                 <th>Data da matrícula</th>
                 <th></th>
-                <th></th>
             </tr>
         </thead>
 
@@ -30,13 +29,7 @@
                     <td>@s.LastName</td>
                     <td>@s.EnrollmentDate.ToShortDateString()</td>
                     <td>
-                        <form asp-controller="Home" asp-action="Delete" method="post">
-                            <input type="hidden" name="id" value="@s.ID" />
-                            <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
-                        </form>
-                    </td>
-                    <td>
-                        <a asp-controller="Home" asp-action="Update" asp-route-id="@s.ID" method="get">
+                        <a asp-controller="StudentCourses" asp-action="Update" asp-route-studentId="@s.ID" method="get">
                             Editar
                         </a>
                     </td>
@@ -50,7 +43,14 @@
                             <ul>
                                 @foreach (var sc in s.StudentCourses!)
                                     {
-                                        <li> - @sc.Course?.Name</li>
+                                    <li>
+                                        - @sc.Course?.Name - @sc.SignDate - 
+                                            <form asp-controller="StudentCourses" asp-action="Delete" method="post">
+                                                <input type="hidden" name="studentId" value="@sc.StudentID" />
+                                                <input type="hidden" name="courseId" value="@sc.CourseID" />
+                                                <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+                                            </form>
+                                    </li>
                                     }
                             </ul>
                         </td>

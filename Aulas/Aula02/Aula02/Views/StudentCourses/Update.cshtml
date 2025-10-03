@@ -1,8 +1,9 @@
-﻿@model Aula02.Models.StudentCourses
+﻿@using Aula02.ViewModels.StudentCourses;
+@model UpdateStudentCoursesViewModel
 
 <h1>Update</h1>
 
-<h4>Inscrição</h4>
+<h4>Edição da Matrícula</h4>
 
 <hr />
 
@@ -13,30 +14,26 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
-                <label asp-for="StudentID" class="control-label">Estudante:</label>
-                <input type="hidden" asp-for="StudentID"/>
-                <input value="@Model.Student?.FirstMidName" readonly/>
-                <span asp-validation-for="StudentID" class="text-danger"></span>
+                <input asp-for="SelectedStudent.ID" readonly/>
             </div>
 
             <div class="form-group">
-                <label asp-for="CourseID" class="control-label"></label>
-                <select asp-for="CourseID" class="form-control" asp-items="ViewBag.Courses">
-                    <option value=""></option>
-                </select>
-                <span asp-validation-for="CourseID" class="text-danger"></span>
-            </div>
+                @for (int i = 0; i < Model.Courses.Count; i++)
+                {
+                        <div class="form-check">
 
-            <div class="form-group">
-                <label asp-for="SignDate" class="control-label">Data de inscrição</label>
-                <input asp-for="SignDate" class="form-control"/>
-                <span asp-validation-for="SignDate" class="text-danger"></span>
-            </div>
+                            <input class="checkbox"
+                               asp-for="Courses[i].IsSelected"
+                                   class="form-check-input" />
 
-            <div class="form-group">
-                <label asp-for="CancelDate" class="control-label">Data de evasão</label>
-                <input asp-for="CancelDate" class="form-control" />
-                <span asp-validation-for="CancelDate" class="text-danger"></span>
+                            <input type="hidden" asp-for="Courses[i].Id" />
+
+                            <label asp-for="Courses[i].IsSelected" class="form-check-label">
+                                @Model.Courses[i].Name
+                            </label>
+
+                        </div>
+                }
             </div>
 
             <div class="form-group">
