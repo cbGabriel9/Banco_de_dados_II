@@ -98,25 +98,32 @@ namespace Aula02.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(int? studentId, int? courseId, StudentCourses studentCourses)
+        public async Task<IActionResult> Update(UpdateStudentCoursesViewModel viewModel)
         {
-            if (!studentId.HasValue || !courseId.HasValue)
-            {
-                return BadRequest();
-            }
-
-            if (studentId.Value != studentCourses.StudentID)
-            {
-                return BadRequest();
-            }
-
             if (ModelState.IsValid)
             {
-                await _studentCoursesRepository.Update(studentId, courseId, studentCourses);
-                return RedirectToAction("Index");
+                try
+                {
+                    var selectedCourseIds = viewModel.Courses // Crio uma lista apenas com os IDs dos cursos selecionados
+                        .Where(c => c.IsSelected)
+                        .Select(c => c.Id)
+                        .ToList();
+
+                    await _studentCoursesRepository.Update(viewModel.SelectedStudent!.ID, selectedCourseIds); // Chamo o update do repository do StudentCourses
+
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty, "Ocorreu um erro ao salvar as alterações.");
+                }
             }
 
-            return View(studentCourses);
+            var student = await _studentRepository.GetById(viewModel.SelectedStudent!.ID);
+            viewModel.SelectedStudent = student;
+            viewModel.SetCourses(await _courseRepository.GetAll());
+
+            return View(viewModel);
         }
 
         [HttpPost]

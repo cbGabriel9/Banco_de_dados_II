@@ -1,5 +1,6 @@
 ﻿using Aula02.Data;
 using Aula02.Models;
+using Aula02.ViewModels.StudentCourses;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,21 +25,35 @@ namespace Aula02.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task Update(int? originalStudentId, int? originalCourseId, StudentCourses studentCourseNewData)
+        public async Task Update(int studentId, List<int> selectedCourseIds) // Caio aqui após chamar esse método no controller
         {
-            var studentCourseOld = await _context.StudentCourses
-                .FindAsync(originalStudentId, originalCourseId);
+            var currentEnrollments = await _context.StudentCourses // Crio uma lista com todas as matrículas daquele estudante (studentId e courseId são os mais importantes)
+                .Where(sc => sc.StudentID == studentId)
+                .ToListAsync();
 
-            if (studentCourseOld != null)
+            var currentCourseIds = currentEnrollments.Select(sc => sc.CourseID).ToList(); // Separo em uma variável uma lista dos cursos atuais
+
+            var courseIdsToAdd = selectedCourseIds.Except(currentCourseIds).ToList(); // Crio uma lista de ids de cursos para adicionar, filtrando apenas os que não estão matriculados ainda
+            foreach (var courseId in courseIdsToAdd)
             {
-                // Remove o registro antigo
-                _context.StudentCourses.Remove(studentCourseOld);
-                await _context.SaveChangesAsync();
+                var newEnrollment = new StudentCourses
+                {
+                    StudentID = studentId,
+                    CourseID = courseId,
+                    SignDate = DateTime.Now
+                };
 
-                // Adiciona o novo registro com os dados atualizados
-                await _context.StudentCourses.AddAsync(studentCourseNewData);
-                await _context.SaveChangesAsync();
+                await _context.StudentCourses.AddAsync(newEnrollment);
             }
+
+            var courseIdsToRemove = currentCourseIds.Except(selectedCourseIds).ToList();
+            var enrollmentsToRemove = currentEnrollments
+                .Where(sc => courseIdsToRemove.Contains(sc.CourseID))
+                .ToList();
+
+            _context.StudentCourses.RemoveRange(enrollmentsToRemove);
+
+            await _context.SaveChangesAsync();
         }
         public async Task Delete(StudentCourses studentCourses)
         {

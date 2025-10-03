@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\controllers\\studentcoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\controllers\\studentcoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\viewmodels\\studentcourses\\updatestudentcoursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\viewmodels\\studentcourses\\updatestudentcoursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\repository\\studentcoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\repository\\studentcoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\viewmodels\\studentcourses\\createstudentcoursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\viewmodels\\studentcourses\\createstudentcoursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\controllers\\studentcoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\controllers\\studentcoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\views\\studentcourses\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\views\\studentcourses\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\views\\studentcourses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\views\\studentcourses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\repository\\istudentcoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\repository\\istudentcoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\views\\studentcourses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\views\\studentcourses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,67 +30,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateStudentCoursesViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\ViewModels\\StudentCourses\\UpdateStudentCoursesViewModel.cs",
-              "RelativeDocumentMoniker": "Aula02\\ViewModels\\StudentCourses\\UpdateStudentCoursesViewModel.cs",
-              "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\ViewModels\\StudentCourses\\UpdateStudentCoursesViewModel.cs",
-              "RelativeToolTip": "Aula02\\ViewModels\\StudentCourses\\UpdateStudentCoursesViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T01:26:21.291Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "StudentCoursesRepository.cs",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Repository\\StudentCoursesRepository.cs",
               "RelativeDocumentMoniker": "Aula02\\Repository\\StudentCoursesRepository.cs",
               "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Repository\\StudentCoursesRepository.cs",
               "RelativeToolTip": "Aula02\\Repository\\StudentCoursesRepository.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAcwEsAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T01:07:26.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "IStudentCoursesRepository.cs",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Repository\\IStudentCoursesRepository.cs",
               "RelativeDocumentMoniker": "Aula02\\Repository\\IStudentCoursesRepository.cs",
               "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Repository\\IStudentCoursesRepository.cs",
               "RelativeToolTip": "Aula02\\Repository\\IStudentCoursesRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T01:07:06.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\StudentCourses\\Update.cshtml",
               "RelativeDocumentMoniker": "Aula02\\Views\\StudentCourses\\Update.cshtml",
               "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\StudentCourses\\Update.cshtml",
               "RelativeToolTip": "Aula02\\Views\\StudentCourses\\Update.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-01T23:44:25.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\StudentCourses\\Index.cshtml",
               "RelativeDocumentMoniker": "Aula02\\Views\\StudentCourses\\Index.cshtml",
@@ -106,33 +85,19 @@
               "RelativeToolTip": "Aula02\\Views\\StudentCourses\\Index.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAACkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-01T23:37:48.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T23:37:48.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StudentCoursesController.cs",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Controllers\\StudentCoursesController.cs",
               "RelativeDocumentMoniker": "Aula02\\Controllers\\StudentCoursesController.cs",
               "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Controllers\\StudentCoursesController.cs",
               "RelativeToolTip": "Aula02\\Controllers\\StudentCoursesController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwDcAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwG8AAACfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T23:29:26.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateStudentCoursesViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\ViewModels\\StudentCourses\\CreateStudentCoursesViewModel.cs",
-              "RelativeDocumentMoniker": "Aula02\\ViewModels\\StudentCourses\\CreateStudentCoursesViewModel.cs",
-              "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\ViewModels\\StudentCourses\\CreateStudentCoursesViewModel.cs",
-              "RelativeToolTip": "Aula02\\ViewModels\\StudentCourses\\CreateStudentCoursesViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T23:19:35.935Z",
               "EditorCaption": ""
             }
           ]

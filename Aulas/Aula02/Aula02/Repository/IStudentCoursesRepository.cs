@@ -5,7 +5,7 @@ namespace Aula02.Repository
     public interface IStudentCoursesRepository
     {
         public Task Create(StudentCourses studentCourse);
-        public Task Update(int? originalStudentId, int? originalCourseId, StudentCourses studentCourseNewData);
+        public Task Update(int studentId, List<int> selectedCourseIds);
         public Task Delete(StudentCourses studentCourse);
         public Task<List<StudentCourses?>> GetByStudentId(int studentId);
         public Task<List<StudentCourses?>> GetByCourseId(int courseId);
