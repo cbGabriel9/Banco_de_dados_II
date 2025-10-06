@@ -76,7 +76,7 @@ namespace Aula02.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View( await _studentRepository.GetAll()); // Ele passa a lista de estudantes para a View
+            return View(await _studentRepository.GetAll()); // Ele passa a lista de estudantes para a View
         }
 
         public IActionResult Privacy()
@@ -94,6 +94,7 @@ namespace Aula02.Controllers
         public async Task<IActionResult> Delete (int id)
         {
             var student = await _studentRepository.GetById(id);
+
             if (student == null)
             {
                 return NotFound();

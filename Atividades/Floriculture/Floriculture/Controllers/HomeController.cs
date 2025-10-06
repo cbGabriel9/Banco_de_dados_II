@@ -1,5 +1,9 @@
 using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Threading.Tasks;
+using Floriculture.Data;
 using Floriculture.Models;
+using Floriculture.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Floriculture.Controllers
@@ -7,20 +11,52 @@ namespace Floriculture.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IPlantRepository _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IPlantRepository plantRepository)
         {
+            _context = plantRepository;
             _logger = logger;
         }
 
-        public IActionResult Index()
+        [HttpGet]
+        public async Task<IActionResult> Index()
         {
+
+            return View(await _context.GetAll());
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        { 
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public async Task<IActionResult> Create(Plant plant)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                await _context.Create(plant);
+                return RedirectToAction("Index");
+            }
+
+            return View(plant);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var plant = await _context.GetById(id);
+
+            if(plant == null)
+            {
+                return NotFound();
+            }
+
+            await _context.Delete(plant);
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

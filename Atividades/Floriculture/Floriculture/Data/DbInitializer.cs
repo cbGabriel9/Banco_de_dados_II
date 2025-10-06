@@ -15,16 +15,16 @@ namespace Floriculture.Data
 
             var plants = new Plant[]
             {
-                new Plant { Name = "Orquídea Phalaenopsis", SensorValue = 25.5f, SensorEvent = 20.0f },
-                new Plant { Name = "Samambaia Americana", SensorValue = 60.2f, SensorEvent = 55.0f },
-                new Plant { Name = "Suculenta Echeveria", SensorValue = 15.0f, SensorEvent = 10.0f },
-                new Plant { Name = "Cacto Estrela", SensorValue = 10.1f, SensorEvent = 8.0f },
-                new Plant { Name = "Monstera Deliciosa", SensorValue = 45.7f, SensorEvent = 40.0f },
-                new Plant { Name = "Jiboia Verde", SensorValue = 55.8f, SensorEvent = 50.0f },
-                new Plant { Name = "Lírio da Paz", SensorValue = 30.3f, SensorEvent = 28.0f },
-                new Plant { Name = "Espada de São Jorge", SensorValue = 20.9f, SensorEvent = 18.0f },
-                new Plant { Name = "Alecrim", SensorValue = 35.1f, SensorEvent = 30.0f },
-                new Plant { Name = "Hortelã", SensorValue = 40.4f, SensorEvent = 38.0f }
+                new Plant { Name = "Orquídea Phalaenopsis", SensorValue = 25.5f, SensorEvent = new DateTime(2025, 12, 20, 9, 30, 0) },
+                new Plant { Name = "Samambaia Americana", SensorValue = 60.2f, SensorEvent = DateTime.Now.AddMinutes(-55) },
+                new Plant { Name = "Suculenta Echeveria", SensorValue = 15.0f, SensorEvent = DateTime.Now.AddMinutes(-10) },
+                new Plant { Name = "Cacto Estrela", SensorValue = 10.1f, SensorEvent = DateTime.Now.AddMinutes(-8) },
+                new Plant { Name = "Monstera Deliciosa", SensorValue = 45.7f, SensorEvent = DateTime.Now.AddMinutes(-40) },
+                new Plant { Name = "Jiboia Verde", SensorValue = 55.8f, SensorEvent = DateTime.Now.AddMinutes(-50) },
+                new Plant { Name = "Lírio da Paz", SensorValue = 30.3f, SensorEvent = DateTime.Now.AddMinutes(-28) },
+                new Plant { Name = "Espada de São Jorge", SensorValue = 20.9f, SensorEvent = DateTime.Now.AddMinutes(-18) },
+                new Plant { Name = "Alecrim", SensorValue = 35.1f, SensorEvent = DateTime.Now.AddMinutes(-30) },
+                new Plant { Name = "Hortelã", SensorValue = 40.4f, SensorEvent = DateTime.Now.AddMinutes(-38) }
             };
 
             foreach (Plant p in plants)

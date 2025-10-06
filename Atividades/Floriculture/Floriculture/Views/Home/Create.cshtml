@@ -1,0 +1,54 @@
+﻿@model Floriculture.Models.Plant
+
+@{
+    ViewData["Title"] = "Cadastrar Nova Planta";
+}
+
+<div class="container mt-4">
+    <h1 class="page-title">Cadastrar Nova Planta</h1>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <form asp-controller="Home" asp-action="Create" method="post">
+
+                @* Adiciona um sumário de erros no topo do formulário *@
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Name" class="form-label">Nome da Planta</label>
+                        <input asp-for="Name" class="form-control" placeholder="Ex: Samambaia Americana" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="SensorValue" class="form-label">Valor do Sensor</label>
+                        <input asp-for="SensorValue" class="form-control" />
+                        <span asp-validation-for="SensorValue" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="SensorEvent" class="form-label">Data e Hora do Evento</label>
+                        <input asp-for="SensorEvent" class="form-control" />
+                        <span asp-validation-for="SensorEvent" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary-custom">
+                        <i class="fas fa-save btn-icon"></i> Salvar Planta
+                    </button>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Voltar para a Lista</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@* Adiciona a seção de scripts para habilitar a validação do lado do cliente (client-side) *@
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

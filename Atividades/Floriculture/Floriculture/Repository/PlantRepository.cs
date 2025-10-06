@@ -1,27 +1,48 @@
-﻿using Floriculture.Models;
+﻿using Floriculture.Data;
+using Floriculture.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Floriculture.Repository
 {
     public class PlantRepository : IPlantRepository
     {
-        public Task Create(Plant plant)
+        private readonly FloricultureContext _context;
+
+        public PlantRepository(FloricultureContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task Delete(Plant plant)
+        public async Task Create(Plant plant)
         {
-            throw new NotImplementedException();
+            await _context.Plants.AddAsync(plant);
+            await _context.SaveChangesAsync();
         }
-
-        public Task GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public Task Update(Plant plant)
         {
             throw new NotImplementedException();
         }
+
+        public async Task Delete(Plant plant)
+        {
+            _context.Plants.Remove(plant);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<Plant>> GetAll()
+        {
+            var data = await _context.Plants
+                .ToListAsync();
+
+            return data;
+        }
+
+        public async Task<Plant?> GetById(int id)
+        {
+            var plant = await _context.Plants.Where(p => p.ID == id).FirstOrDefaultAsync();
+
+            return plant;
+        }
+
     }
 }

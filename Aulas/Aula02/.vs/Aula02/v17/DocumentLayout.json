@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\repository\\istudentcoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\repository\\istudentcoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\repository\\studentcoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\repository\\studentcoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\repository\\istudentcoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\repository\\istudentcoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\controllers\\studentcoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Aula02\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Aula02\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAB0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T18:25:00.465Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,14 +61,14 @@
               "RelativeDocumentMoniker": "Aula02\\Repository\\StudentCoursesRepository.cs",
               "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Repository\\StudentCoursesRepository.cs",
               "RelativeToolTip": "Aula02\\Repository\\StudentCoursesRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDsAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T01:07:26.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "IStudentCoursesRepository.cs",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Repository\\IStudentCoursesRepository.cs",
               "RelativeDocumentMoniker": "Aula02\\Repository\\IStudentCoursesRepository.cs",
@@ -64,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\StudentCourses\\Update.cshtml",
               "RelativeDocumentMoniker": "Aula02\\Views\\StudentCourses\\Update.cshtml",
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\StudentCourses\\Index.cshtml",
               "RelativeDocumentMoniker": "Aula02\\Views\\StudentCourses\\Index.cshtml",
@@ -88,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StudentCoursesController.cs",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Controllers\\StudentCoursesController.cs",
               "RelativeDocumentMoniker": "Aula02\\Controllers\\StudentCoursesController.cs",

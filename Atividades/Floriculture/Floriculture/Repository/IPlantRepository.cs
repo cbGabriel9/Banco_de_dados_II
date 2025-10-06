@@ -7,6 +7,7 @@ namespace Floriculture.Repository
         public Task Create(Plant plant);
         public Task Update(Plant plant);
         public Task Delete(Plant plant);
-        public Task GetById(int id);
+        public Task<List<Plant>> GetAll();
+        public Task<Plant?> GetById(int id);
     }
 }

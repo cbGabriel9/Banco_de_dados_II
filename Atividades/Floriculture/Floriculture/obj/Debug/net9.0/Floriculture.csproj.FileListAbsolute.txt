@@ -22,7 +22,6 @@ C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Flor
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\obj\Debug\net9.0\scopedcss\bundle\Floriculture.styles.css
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\obj\Debug\net9.0\scopedcss\projectbundle\Floriculture.bundle.scp.css
-C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\obj\Debug\net9.0\compressed\x61thdodx4-b9sayid5wm.gz
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\obj\Debug\net9.0\compressed\qfcizcxh1a-61n19gt1b8.gz
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\obj\Debug\net9.0\compressed\0jkpwyk8ab-xtxxf3hu2r.gz
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\obj\Debug\net9.0\compressed\74xli5h1ay-bqjiyaj88i.gz
@@ -228,3 +227,4 @@ C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Flor
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\obj\Debug\net9.0\Floriculture.csproj.AssemblyReference.cache
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\obj\Debug\net9.0\Floricul.8B220924.Up2Date
+C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\obj\Debug\net9.0\compressed\x61thdodx4-ve5o3nrja1.gz
