@@ -1,3 +1,4 @@
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -60,7 +61,7 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
+C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\wwwroot\css\site.css
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\wwwroot\favicon.ico
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\wwwroot\js\site.js
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -122,4 +123,3 @@ C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Flor
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\PICHAU\Desktop\Faculdade\Banco_de_dados_II\Atividades\Floriculture\Floriculture\wwwroot\css\site.css

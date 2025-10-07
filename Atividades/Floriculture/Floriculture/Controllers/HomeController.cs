@@ -44,6 +44,40 @@ namespace Floriculture.Controllers
             return View(plant);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Update(int? id)
+        {
+            if(!id.HasValue)
+            {
+                return BadRequest();
+            }
+            
+            var plant = await _context.GetById(id!.Value);
+
+            if(plant == null)
+            {
+                return NotFound();
+            }
+
+            return View(plant);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(Plant plant)
+        {
+            if(plant == null)
+            {
+                return NotFound();
+            }
+
+            if(ModelState.IsValid)
+            {
+                await _context.Update(plant);
+                return RedirectToAction("Index");
+            }
+
+            return View(plant);
+        }
 
         [HttpPost]
         public async Task<IActionResult> Delete(int id)

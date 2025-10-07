@@ -5,11 +5,11 @@
 }
 
 <div class="container mt-4">
-    <h1 class="page-title">Cadastrar Nova Planta</h1>
+    <h1 class="page-title">Atualizar Planta</h1>
 
     <div class="card shadow-sm">
         <div class="card-body">
-            <form asp-controller="Home" asp-action="Create" method="post">
+            <form asp-controller="Home" asp-action="Update" method="post">
 
                 @* Adiciona um sumário de erros no topo do formulário *@
                 <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
@@ -37,7 +37,7 @@
 
                 <div class="form-group mt-4">
                     <button type="submit" class="btn btn-primary-custom">
-                        <i class="fas fa-save btn-icon"></i> Salvar Planta
+                        <i class="fas fa-save btn-icon">Salvar Planta</i>
                     </button>
                     <a asp-action="Index" class="btn btn-outline-secondary">Voltar para a Lista</a>
                 </div>
@@ -45,3 +45,4 @@
         </div>
     </div>
 </div>
+

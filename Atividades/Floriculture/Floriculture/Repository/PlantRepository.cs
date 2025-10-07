@@ -18,9 +18,10 @@ namespace Floriculture.Repository
             await _context.Plants.AddAsync(plant);
             await _context.SaveChangesAsync();
         }
-        public Task Update(Plant plant)
+        public async Task Update(Plant plant)
         {
-            throw new NotImplementedException();
+            _context.Plants.Update(plant);
+            await _context.SaveChangesAsync();
         }
 
         public async Task Delete(Plant plant)
