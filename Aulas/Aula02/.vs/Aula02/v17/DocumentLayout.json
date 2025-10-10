@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Aula02\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Aula02\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAB0AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwDcAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-06T18:25:00.465Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "Aula02\\Repository\\StudentCoursesRepository.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwDsAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T01:07:26.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T01:07:26.697Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Aula02\\Repository\\IStudentCoursesRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T01:07:06.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T01:07:06.85Z"
             },
             {
               "$type": "Document",
