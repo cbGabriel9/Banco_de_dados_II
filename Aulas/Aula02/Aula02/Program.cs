@@ -16,6 +16,10 @@ builder.Services.AddDbContext<SchoolContext>(options => // Nessa linha, ele adic
 builder.Services.AddScoped<IStudentRepository, StudentRepository>(); // Adiciona o repositório ao container de serviços da aplicação
 builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 builder.Services.AddScoped<IStudentCoursesRepository, StudentCoursesRepository>();
+builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
+//builder.Services.AddScoped<ISubjectsCourseRepository, SubjectsCourseRepository>();
+
+
 
 
 var app = builder.Build();

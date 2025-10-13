@@ -33,7 +33,7 @@ namespace Aula02.Controllers
             var viewModel = new CreateStudentCoursesViewModel();
 
             viewModel.Students = await _studentRepository.GetAllNotEnrolled();
-            viewModel.SetCourses(await _courseRepository.GetAll()); 
+            viewModel.SetCourses(await _courseRepository.GetAll());
 
             return View(viewModel);
         }
@@ -41,12 +41,12 @@ namespace Aula02.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateStudentCoursesViewModel viewModel)
         {
-            
+
             if (ModelState.IsValid)
             {
-                foreach(var c in viewModel.Courses)
+                foreach (var c in viewModel.Courses)
                 {
-                    if(c.IsSelected)
+                    if (c.IsSelected)
                     {
                         await _studentCoursesRepository.Create(new Models.StudentCourses
                         {
@@ -56,7 +56,7 @@ namespace Aula02.Controllers
                         });
                     }
                 }
-                
+
                 return RedirectToAction("Index");
             }
 
@@ -86,9 +86,9 @@ namespace Aula02.Controllers
 
             viewModel.SetCourses(await _courseRepository.GetAll());
 
-            foreach(var c in viewModel.Courses)
+            foreach (var c in viewModel.Courses)
             {
-                if(studentCourses.Any(sc => sc!.CourseID == c.Id))
+                if (studentCourses.Any(sc => sc!.CourseID == c.Id))
                 {
                     c.IsSelected = true;
                 }

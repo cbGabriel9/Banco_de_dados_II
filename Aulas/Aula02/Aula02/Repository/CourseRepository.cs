@@ -50,5 +50,21 @@ namespace Aula02.Repository
 
             return courses;
         }
+
+        public async Task<List<Course>> GetAllNotEnrolled()
+        {
+            var enrolledCourseIds = await _context.SubjectsCourse
+                .Select(sc => sc.CourseID)
+                .Distinct()
+                .ToListAsync();
+
+            var data = await _context.Courses
+                .Include(sc => sc.SubjectsCourse!)
+                    .ThenInclude(c => c.Course)
+                    .Where(w => !enrolledCourseIds.Contains(w.ID))
+                    .OrderBy(c => c.Name)
+                .ToListAsync();
+            return data;
+        }
     }
 }

@@ -10,5 +10,6 @@ namespace Aula02.Repository
             public Task<Course?> GetById(int id);
             public Task<List<Course>> GetByName(string name);
             public Task<List<Course>> GetAll();
+            public Task<List<Course>> GetAllNotEnrolled();
     }
 }

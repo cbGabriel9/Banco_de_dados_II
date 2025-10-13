@@ -33,7 +33,12 @@ namespace Aula02.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("SubjectID")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
+
+                    b.HasIndex("SubjectID");
 
                     b.ToTable("Course", (string)null);
                 });
@@ -68,7 +73,7 @@ namespace Aula02.Migrations
                     b.Property<int>("CourseID")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("CancelDate")
+                    b.Property<DateTime>("CancelDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("SignDate")
@@ -79,6 +84,44 @@ namespace Aula02.Migrations
                     b.HasIndex("CourseID");
 
                     b.ToTable("StudentCourses", (string)null);
+                });
+
+            modelBuilder.Entity("Aula02.Models.Subject", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Subjects", (string)null);
+                });
+
+            modelBuilder.Entity("Aula02.Models.SubjectsCourse", b =>
+                {
+                    b.Property<int>("SubjectID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseID")
+                        .HasColumnType("int");
+
+                    b.HasKey("SubjectID", "CourseID");
+
+                    b.HasIndex("CourseID");
+
+                    b.ToTable("SubjectsCourse", (string)null);
+                });
+
+            modelBuilder.Entity("Aula02.Models.Course", b =>
+                {
+                    b.HasOne("Aula02.Models.Subject", null)
+                        .WithMany("Courses")
+                        .HasForeignKey("SubjectID");
                 });
 
             modelBuilder.Entity("Aula02.Models.StudentCourses", b =>
@@ -100,14 +143,40 @@ namespace Aula02.Migrations
                     b.Navigation("Student");
                 });
 
+            modelBuilder.Entity("Aula02.Models.SubjectsCourse", b =>
+                {
+                    b.HasOne("Aula02.Models.Course", "Course")
+                        .WithMany("SubjectsCourse")
+                        .HasForeignKey("CourseID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aula02.Models.Subject", "Subject")
+                        .WithMany()
+                        .HasForeignKey("SubjectID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Subject");
+                });
+
             modelBuilder.Entity("Aula02.Models.Course", b =>
                 {
                     b.Navigation("StudentCourses");
+
+                    b.Navigation("SubjectsCourse");
                 });
 
             modelBuilder.Entity("Aula02.Models.Student", b =>
                 {
                     b.Navigation("StudentCourses");
+                });
+
+            modelBuilder.Entity("Aula02.Models.Subject", b =>
+                {
+                    b.Navigation("Courses");
                 });
 #pragma warning restore 612, 618
         }

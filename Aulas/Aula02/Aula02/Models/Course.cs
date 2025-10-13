@@ -8,5 +8,6 @@ namespace Aula02.Models
         public int ID { get; set; }
         public string? Name { get; set; }
         public List<StudentCourses>? StudentCourses { get; set; } // Indica que tem vários cursos na tabela StudentCourses
+        public List<SubjectsCourse>? SubjectsCourse { get; set; }
     }
 }

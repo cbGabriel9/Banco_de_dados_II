@@ -26,6 +26,7 @@ namespace Aula02.Data
                 new Student{FirstMidName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2003-09-01")},
                 new Student{FirstMidName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2005-09-01")}
             };
+
             foreach (Student s in students)
             {
                 context.Students.Add(s);

@@ -7,6 +7,6 @@ namespace Aula02.Models
         [Key]
         public int ID { get; set; }
         public string? Name { get; set; }
-        public Course? course { get; set; }
+        public List<Course>? Courses { get; set; }
     }
 }
