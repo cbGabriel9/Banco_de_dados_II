@@ -19,35 +19,35 @@
         </thead>
 
         <tbody>
-            @foreach (var s in Model)
+            @foreach (var c in Model)
             {
                 <tr>
-                    <td>@s.ID</td>
-                    <td>@s.Name</td>
+                    <td>@c.ID</td>
+                    <td>@c.Name</td>
                     <td>
-                        <a asp-controller="SubjectsCourse" asp-action="Update" asp-route-studentId="@s.ID" method="get">
+                        <a asp-controller="SubjectsCourse" asp-action="Update" asp-route-courseId="@c.ID" method="get">
                             Editar
                         </a>
                     </td>
                 </tr>
 
-                @if(s.SubjectsCourse!.Count > 0)
+                @if (c.SubjectsCourse!.Count > 0)
                 {
 
                     <tr>
                         <td colspan="5">
                             <ul>
-                                @foreach (var sc in s.SubjectsCourse!)
-                                    {
+                                @foreach (var sc in c.SubjectsCourse!)
+                                {
                                     <li>
-                                        - @sc.Subject?.Name - 
-                                            <form asp-controller="SubjectsCourse" asp-action="Delete" method="post">
-                                                <input type="hidden" name="studentId" value="@sc.CourseID" />
-                                                <input type="hidden" name="subjectId" value="@sc.SubjectID" />
-                                                <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
-                                            </form>
+                                        - @sc.Subject?.Name -
+                                        <form asp-controller="SubjectsCourse" asp-action="Delete" method="post">
+                                            <input type="hidden" name="courseId" value="@sc.CourseID" />
+                                            <input type="hidden" name="subjectId" value="@sc.SubjectID" />
+                                            <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+                                        </form>
                                     </li>
-                                    }
+                                }
                             </ul>
                         </td>
                     </tr>

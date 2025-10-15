@@ -1,0 +1,45 @@
+﻿@using Aula02.ViewModels.SubjectsCourse;
+@model UpdateSubjectsCourseViewModel
+
+<h1>Update</h1>
+
+<h4>Edição da Matéria por curso</h4>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Update" asp-controller="SubjectsCourse">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <input asp-for="SelectedCourse.Name" readonly />
+                <input type="hidden" asp-for="SelectedCourse.ID" readonly />
+            </div>
+
+            <div class="form-group">
+                @for (int i = 0; i < Model.Subjects.Count; i++)
+                {
+                    <div class="form-check">
+
+                        <input class="checkbox"
+                               asp-for="Subjects[i].IsSelected"
+                               class="form-check-input" />
+
+                        <input type="hidden" asp-for="Subjects[i].Id" />
+
+                        <label asp-for="Subjects[i].IsSelected" class="form-check-label">
+                            @Model.Subjects[i].Name
+                        </label>
+
+                    </div>
+                }
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

@@ -33,7 +33,10 @@ namespace Aula02.Repository
 
         public async Task<List<Course>> GetAll()
         {
-            var data = await _context.Courses.ToListAsync();
+            var data = await _context.Courses
+                .Include(sc => sc.SubjectsCourse!)
+                    .ThenInclude(s => s.Subject)
+                .ToListAsync();
             return data;
         }
 
@@ -60,7 +63,7 @@ namespace Aula02.Repository
 
             var data = await _context.Courses
                 .Include(sc => sc.SubjectsCourse!)
-                    .ThenInclude(c => c.Course)
+                    .ThenInclude(s => s.Subject)
                     .Where(w => !enrolledCourseIds.Contains(w.ID))
                     .OrderBy(c => c.Name)
                 .ToListAsync();
