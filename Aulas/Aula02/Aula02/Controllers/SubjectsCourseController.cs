@@ -87,7 +87,7 @@ namespace Aula02.Controllers
 
             foreach (var c in viewModel.Subjects)
             {
-                if (subjectsCourse.Any(sc => sc!.CourseID == c.Id))
+                if (subjectsCourse.Any(sc => sc!.SubjectID == c.Id))
                 {
                     c.IsSelected = true;
                 }

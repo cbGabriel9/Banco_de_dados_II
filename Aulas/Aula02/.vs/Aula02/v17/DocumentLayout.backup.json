@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\views\\subjectscourse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\views\\subjectscourse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\controllers\\subjectscoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\controllers\\subjectscoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\views\\subjectscourse\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\views\\subjectscourse\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\views\\subjectscourse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|solutionrelative:aula02\\views\\subjectscourse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23E8701B-DC40-40C8-8B90-134D578F1BA2}|Aula02\\Aula02.csproj|c:\\users\\pichau\\desktop\\faculdade\\banco_de_dados_ii\\aulas\\aula02\\aula02\\repository\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,32 +30,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\SubjectsCourse\\Update.cshtml",
-              "RelativeDocumentMoniker": "Aula02\\Views\\SubjectsCourse\\Update.cshtml",
-              "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\SubjectsCourse\\Update.cshtml",
-              "RelativeToolTip": "Aula02\\Views\\SubjectsCourse\\Update.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-15T20:56:25.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CourseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Repository\\CourseRepository.cs",
-              "RelativeDocumentMoniker": "Aula02\\Repository\\CourseRepository.cs",
-              "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Repository\\CourseRepository.cs",
-              "RelativeToolTip": "Aula02\\Repository\\CourseRepository.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAA0wD8AAAAtAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "SubjectsCourseController.cs",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Controllers\\SubjectsCourseController.cs",
+              "RelativeDocumentMoniker": "Aula02\\Controllers\\SubjectsCourseController.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Controllers\\SubjectsCourseController.cs",
+              "RelativeToolTip": "Aula02\\Controllers\\SubjectsCourseController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwv1oAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:53:31.024Z",
+              "WhenOpened": "2025-10-17T20:02:54.275Z",
               "EditorCaption": ""
             },
             {
@@ -60,7 +51,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\SubjectsCourse\\Update.cshtml",
+              "RelativeDocumentMoniker": "Aula02\\Views\\SubjectsCourse\\Update.cshtml",
+              "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\SubjectsCourse\\Update.cshtml",
+              "RelativeToolTip": "Aula02\\Views\\SubjectsCourse\\Update.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T20:56:25.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "CourseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Repository\\CourseRepository.cs",
+              "RelativeDocumentMoniker": "Aula02\\Repository\\CourseRepository.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Repository\\CourseRepository.cs",
+              "RelativeToolTip": "Aula02\\Repository\\CourseRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA0wD8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:53:31.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\SubjectsCourse\\Create.cshtml",
               "RelativeDocumentMoniker": "Aula02\\Views\\SubjectsCourse\\Create.cshtml",
@@ -68,18 +84,17 @@
               "RelativeToolTip": "Aula02\\Views\\SubjectsCourse\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-15T20:36:13.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T20:36:13.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\SubjectsCourse\\Index.cshtml",
               "RelativeDocumentMoniker": "Aula02\\Views\\SubjectsCourse\\Index.cshtml",
               "ToolTip": "C:\\Users\\PICHAU\\Desktop\\Faculdade\\Banco_de_dados_II\\Aulas\\Aula02\\Aula02\\Views\\SubjectsCourse\\Index.cshtml",
               "RelativeToolTip": "Aula02\\Views\\SubjectsCourse\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-13T21:53:01.471Z",
               "EditorCaption": ""
