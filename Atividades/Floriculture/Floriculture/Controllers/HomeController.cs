@@ -10,14 +10,14 @@ namespace Floriculture.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        private readonly IPlantRepository _context;
+            private readonly ILogger<HomeController> _logger;
+            private readonly IPlantRepository _context;
 
-        public HomeController(ILogger<HomeController> logger, IPlantRepository plantRepository)
-        {
-            _context = plantRepository;
-            _logger = logger;
-        }
+            public HomeController(ILogger<HomeController> logger, IPlantRepository plantRepository)
+            {
+                _context = plantRepository;
+                _logger = logger;
+            }
 
         [HttpGet]
         public async Task<IActionResult> Index()
